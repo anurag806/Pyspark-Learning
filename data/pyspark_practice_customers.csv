@@ -1,0 +1,16 @@
+customer_id,name,age,city,department,salary,experience,status
+101,Anurag,28,Kanpur,IT,62000,4,Active
+102,Swati,25,Lucknow,HR,45000,2,Active
+103,Arya,31,Delhi,Finance,72000,7,Active
+104,Rahul,22,Unnao,IT,38000,1,Inactive
+105,Priya,29,Kanpur,Sales,55000,5,Active
+106,Amit,35,Delhi,IT,85000,10,Active
+107,Neha,27,Lucknow,HR,48000,3,Inactive
+108,Rohit,24,Kanpur,Finance,67000,6,Active
+109,Sneha,32,Unnao,Sales,59000,8,Active
+110,Vikas,30,Delhi,IT,78000,7,Active
+111,Pooja,26,Kanpur,HR,50000,3,Inactive
+112,Karan,38,Lucknow,Finance,92000,12,Active
+113,Riya,23,Delhi,Sales,43000,2,Active
+114,Mohit,34,Unnao,IT,81000,9,Active
+115,Nisha,29,Kanpur,Finance,70000,6,Inactive
