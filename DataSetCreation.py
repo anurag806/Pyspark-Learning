@@ -13,3 +13,8 @@ data=[
 column=["id","name","age"]
 df=spark.createDataFrame(data,column);
 df.show();
+#reading data
+csv_read=spark.read.csv("data/2015-12-12.csv");
+csv_read.printSchema();
+csv_read.show();
+spark.stop();
