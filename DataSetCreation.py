@@ -1,4 +1,5 @@
 from pyspark.sql import SparkSession
+from pyspark.sql.functions import desc
 spark=(
     (SparkSession
      .builder
@@ -14,7 +15,14 @@ column=["id","name","age"]
 df=spark.createDataFrame(data,column);
 df.show();
 #reading data
-csv_read=spark.read.csv("data/2015-12-12.csv");
+csv_read=spark.read.csv("data/2015-12-12.csv",
+                        header=True,
+                        inferSchema=True);
 csv_read.printSchema();
 csv_read.show();
-spark.stop();
+# showing only 10 items
+csv_read.show(10);
+# ordering
+print(csv_read.columns);
+csv_read.orderBy("ip_id").show(10);
+csv_read.orderBy(desc("ip_id")).show(10);
